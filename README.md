@@ -50,7 +50,7 @@ The system is divided into three main modules:
 2. AI Processing Module  
 3. Alert & Response Module
 
-![System Architecture Diagram](D:\wild-animal-detection-and-emergency-system\images\proposed_work.png)
+![System Architecture Diagram](D:\wild-animal-detection-and-emergency-system/images/proposed_work.png)
 
 ---
 
