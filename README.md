@@ -1,79 +1,64 @@
- 🐾 Seamless Emergency Communication & Wild Animal Detection
+# Wild Animal Detection and Emergency Communication System
 
-A Deep Learning + IoT System for Off-Grid Tribal Safety
+A deep learning + IoT system for wildlife detection and emergency alerts in remote tribal areas with limited connectivity.
 
-This project focuses on building a real-time wildlife detection and emergency communication system for tribal communities living in remote regions with limited connectivity. The system combines AI models (ResNet50, Transformers) with IoT motion and thermal sensors, and uses RF/Mesh networking to deliver alerts even without internet access.
+## Overview
 
----
+This project builds a real-time wildlife detection and emergency communication system for tribal communities in remote regions. It combines AI models (ResNet50, CNNs, Transformers) with IoT sensors and uses RF/mesh networking to deliver alerts even without internet access.
 
-🚀 Key Features
+## Key Features
 
-### Wild Animal Detection
-- Uses ResNet50, CNN, and Transformer models to classify animals.
-- Identifies carnivorous vs. non-carnivorous species.
+**Wildlife Detection:**
+- ResNet50, CNN, and Transformer models for animal classification
+- Identifies carnivorous vs. non-carnivorous species
+- Danger level classification
 
-### Danger Level Classification
-- Models analyze patterns and assign threat levels for immediate decision-making.
+**IoT Integration:**
+- Motion sensors (IR), ESP32-CAM, DHT11/22
+- Real-time environmental monitoring
+- Low-power operation for remote deployment
 
-### IoT-Driven Alerts
-- Motion sensors (IR), ESP32-CAM, DHT11/22, and environmental sensors trigger real-time alerts.
+**Offline Communication:**
+- RF modules and mesh networks for areas without internet
+- Works in no-connectivity zones
 
-### Offline Communication
-- Alerts transmitted via RF modules / mesh networks for areas without mobile or internet coverage.
+**Mobile App:**
+- Flutter app for SOS alerts and real-time notifications
+- Community safety features
 
-### Mobile App Integration
-- Flutter app for SOS alerts, real-time notifications, and community safety features.
+## Tech Stack
 
----
+- **AI/ML:** ResNet50, CNN, Transformers, TensorFlow, PyTorch
+- **IoT:** ESP32-CAM, IR Sensor, DHT11/22
+- **Communication:** RF Modules, Mesh Network
+- **Software:** Python, OpenCV, Keras, Flutter, SQLite
 
-🧠 Tech Stack
+## Model Outputs
 
-**AI / ML:** ResNet50, CNN, Transformers, TensorFlow / PyTorch  
-**IoT:** ESP32-CAM, IR Sensor, DHT11/22  
-**Communication:** RF Modules, Mesh Network  
-**Software:** Python, OpenCV, Keras, Flutter, SQLite
+![Carnivorous Detection](images/carnivores_detection.png)
+![Danger Level Classification](images/danger_level_classifications.png)
 
----
+## System Architecture
 
- 📊 Model Outputs
+The system has three main modules:
 
-![Carnivorous Detection Screenshot](images/carnivores_detection.png)
-![Danger Level Confusion Matrix](images/danger_level_classifications.png)
-
----
-
- 🏗️ System Architecture
-
-The system is divided into three main modules:
-
-1. Detection & Sensing Module 
-2. AI Processing Module  
+1. Detection & Sensing Module
+2. AI Processing Module
 3. Alert & Response Module
 
-![System Architecture Diagram](D:\wild-animal-detection-and-emergency-system/images/proposed_work.png)
+![System Architecture](images/proposed_work.png)
 
----
+## How It Works
 
-## 📝 How It Works
+1. Sensors detect motion and environmental conditions
+2. ESP32-CAM captures images
+3. AI classifies species and danger level
+4. RF/Mesh network sends alerts to mobile app
+5. SOS feature for emergency communication
 
-1. Sensors detect motion / environmental conditions.  
-2. ESP32-CAM captures images.  
-3. AI classifies species & danger level.  
-4. RF/Mesh network sends alerts to the mobile app.  
-5. SOS feature triggers emergency communication.
+## Results
 
----
-
-## 🧪 Results
-
-- Improved detection accuracy using ResNet50 + Transformer hybrid.  
-- Danger classification demonstrated high precision and recall.  
-- System worked effectively under low-power constraints.  
-- Supports deployment in low-connectivity tribal regions.
-
----
-
-
-
-
-Made with ❤️ for Tribal Safety & Wildlife Protection
+- High detection accuracy with ResNet50 + Transformer hybrid
+- Good precision and recall for danger classification
+- Effective under low-power constraints
+- Successfully deployed in low-connectivity regions
